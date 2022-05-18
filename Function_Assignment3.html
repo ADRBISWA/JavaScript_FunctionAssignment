@@ -1,0 +1,29 @@
+<html>
+<head>
+<body>
+<p>F12 on your keyboard will activate debugging.</p>
+<p>Then select "Console" in the debugger menu.</p>
+<p>Then click Run again.</p>
+<script>
+
+
+function isEven(n) {
+  return n % 2 == 0;
+}
+
+function isOdd(n) 
+{
+  return Math.abs(n % 2) == 1;
+}
+//using filter
+let arr = [10,40,51,25];
+let evenNum = arr.filter((n) => n % 2 == 0);
+console.log(evenNum);
+console.log(isEven(10));
+console.log(isEven(25));
+console.log(isOdd(51));
+
+</script>
+</body>
+</head>
+</html>

@@ -1,0 +1,29 @@
+<html>
+<head>
+<body>
+<p>F12 on your keyboard will activate debugging.</p>
+<p>Then select "Console" in the debugger menu.</p>
+<p>Then click Run again.</p>
+<script>
+
+let numbers = [2,6,8,10];
+
+//square
+Array.prototype.square = function () {
+  var num1 = [];
+  this.map(function (obj) {
+    num1.push(obj * obj);
+  });
+  return num1;
+};
+console.log(numbers.square());
+
+//square root
+let numbers1 = [20,12,43,15];
+const newArray = numbers1.map(Math.sqrt);
+console.log(newArray);
+
+</script>
+</body>
+</head>
+</html>
